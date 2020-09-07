@@ -5,9 +5,13 @@ spring:
     name: service-product
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql:///magnolia?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&useSSL=true
-    username: root
-    password: root
+    url: jdbc:mysql://192.168.99.70:3306/magnolia?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&useSSL=true
+    username: admin
+    password: 123456
+  cloud:
+     nacos:
+       discovery:
+         server-addr: 127.0.0.1:8848
   jpa:
     properties:
       hibernate:
